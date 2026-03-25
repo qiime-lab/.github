@@ -23,7 +23,7 @@
 ### [qiime2-manual](https://github.com/qiime-lab/qiime2-manual) — まず読む
 
 [![release](https://img.shields.io/github/v/release/qiime-lab/qiime2-manual?style=flat-square)](https://github.com/qiime-lab/qiime2-manual/releases)
-[![license](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey?style=flat-square)](https://github.com/qiime-lab/qiime2-manual/blob/main/LICENSE)
+[![license](https://img.shields.io/badge/license-All%20Rights%20Reserved-red?style=flat-square)](https://github.com/qiime-lab/qiime2-manual/blob/main/LICENSE)
 
 QIIME 2 による 16S rRNA 解析の全体像を 25 章で体系的に解説した日本語マニュアル。各ステップが何をしているのか、なぜ必要なのか、どんな選択肢があるのかをメリット・デメリットとともに学べる。DADA2 からANCOM-BC2、q2-boots まで、QIIME 2 2026.1 の最新手法を網羅。内部標準による絶対定量やネガコン除去など実験室の実務もカバー。
 
@@ -85,4 +85,4 @@ git clone https://github.com/qiime-lab/seq2pipe.git && cd seq2pipe
 | Repository | License |
 |:--|:--|
 | seq2pipe / qiime2-assistant | MIT |
-| qiime2-manual | CC BY-NC-SA 4.0 |
+| qiime2-manual | All Rights Reserved |
