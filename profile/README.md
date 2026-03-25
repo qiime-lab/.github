@@ -1,133 +1,105 @@
-<h1 align="center">qiime-lab</h1>
+<h1 align="center">
+  <br>
+  🧬 qiime-lab
+  <br>
+</h1>
+
+<h4 align="center">QIIME 2 マイクロバイオーム解析のためのオープンソースツール群</h4>
 
 <p align="center">
-  <b>QIIME 2 マイクロバイオーム解析のためのオープンソースツール群</b><br>
-  16S rRNA アンプリコンシーケンス解析を、より簡単に・より再現性高く・より自動的に。
+  16S rRNA アンプリコンシーケンス解析を、より簡単に・より再現性高く・より自動的に。<br>
+  すべて<b>ローカル完結</b> — クラウド API・外部送信なし。
 </p>
 
 <p align="center">
-  <a href="https://github.com/qiime-lab/seq2pipe"><img src="https://img.shields.io/badge/seq2pipe-v1.0.0-blue?style=flat-square" alt="seq2pipe"></a>
-  <a href="https://github.com/qiime-lab/qiime2-assistant"><img src="https://img.shields.io/badge/qiime2--assistant-v1.0.0-green?style=flat-square" alt="qiime2-assistant"></a>
-  <a href="https://github.com/qiime-lab/qiime2-manual"><img src="https://img.shields.io/badge/qiime2--manual-v2.1.0-orange?style=flat-square" alt="qiime2-manual"></a>
+  <a href="https://github.com/qiime-lab/seq2pipe/releases"><img src="https://img.shields.io/github/v/release/qiime-lab/seq2pipe?label=seq2pipe&style=flat-square&color=0969da" alt="seq2pipe"></a>
+  <a href="https://github.com/qiime-lab/qiime2-assistant/releases"><img src="https://img.shields.io/github/v/release/qiime-lab/qiime2-assistant?label=assistant&style=flat-square&color=2da44e" alt="assistant"></a>
+  <a href="https://github.com/qiime-lab/qiime2-manual/releases"><img src="https://img.shields.io/github/v/release/qiime-lab/qiime2-manual?label=manual&style=flat-square&color=e16f24" alt="manual"></a>
 </p>
 
 ---
 
-## About
+## 3 つのアプローチ
 
-**qiime-lab** は、QIIME 2 による腸内細菌叢・マイクロバイオーム解析をローカル環境で完結させるためのツール群を開発・公開しています。
-
-マイクロバイオーム研究では、シーケンスデータの取得後に多くの解析ステップが必要です。QIIME 2 は強力なフレームワークですが、コマンド体系の学習コスト・パラメータの選定・下流統計解析・可視化・レポート作成まで含めると、初学者にとっても経験者にとっても大きな負担になります。
-
-qiime-lab では、この課題に対して 3 つのアプローチで取り組んでいます：
-
-1. **自動化** — AI エージェントが解析パイプライン全体を自律的に設計・実行
-2. **対話** — わからないことをチャットで即座に質問できる AI アシスタント
-3. **ドキュメント** — コピー＆ペーストで実行可能な、実験室発の日本語マニュアル
-
-すべてのツールは **完全ローカル動作** を基本としており、クラウド API や外部サービスへのデータ送信は一切ありません。
+|  | リポジトリ | ひとこと |
+|:--:|:--|:--|
+| ⚡ | **[seq2pipe](https://github.com/qiime-lab/seq2pipe)** | FASTQ を渡すだけ → 全自動で解析・29図・レポート生成 |
+| 💬 | **[qiime2-assistant](https://github.com/qiime-lab/qiime2-assistant)** | マニュアルを読み込んだ AI とチャットで質問 |
+| 📖 | **[qiime2-manual](https://github.com/qiime-lab/qiime2-manual)** | 初学者が QIIME 2 を学ぶための 25 章構成の日本語ガイド |
 
 ---
 
-## Projects
+### ⚡ seq2pipe — 全自動解析パイプライン
 
-### [seq2pipe](https://github.com/qiime-lab/seq2pipe) — 自動解析パイプライン
+```
+FASTQ → DADA2 → 系統樹 → 多様性 → 分類 → 29図 → HTML レポート
+```
 
-[![release](https://img.shields.io/github/v/release/qiime-lab/seq2pipe?style=flat-square)](https://github.com/qiime-lab/seq2pipe/releases)
-[![license](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](https://github.com/qiime-lab/seq2pipe/blob/master/LICENSE)
-
-ローカル LLM (Ollama) を搭載した AI エージェントが、生の FASTQ データから QIIME 2 解析・統計図・レポートまでを全自動で生成します。
-
-**主な機能：**
-- **3 ステップ自動パイプライン** (`--auto` モード)
-  - STEP 1: QIIME 2 コアパイプライン (DADA2 → 系統樹 → 多様性 → 分類)
-  - STEP 1.5: 決定論的包括解析 — LLM 非依存で **29 種の出版品質図** を確実に生成
-  - STEP 2: LLM 適応型自律解析 — データ特性に応じた応用解析を自動設計
-  - STEP 3: HTML レポート自動生成
-- **スマート自動検出** — DADA2 パラメータ・プライマー配列・入力データ種別・sampling depth を自動推定
-- **vibe-local 方式コード生成** — LLM がデータ構造を読み取ってからコードを書くため精度が高く、エラー時は自動修正
-- **対話型修正** — 生成図に対して「色を変えて」「凡例を移動して」など自然言語で修正指示
-- **クロスプラットフォーム** — macOS (Intel / Apple Silicon) · Linux · Windows (WSL2 / Docker)
+- `--auto` で完全無人実行。DADA2 パラメータ・プライマー・sampling depth を自動検出
+- LLM がデータ構造を読んでからコードを書く **vibe-local 方式**。エラー時は自動修正
+- 生成図に「色を変えて」「凡例を外に」など自然言語で修正を指示可能
 
 ```bash
 git clone https://github.com/qiime-lab/seq2pipe.git && cd seq2pipe
 ./setup.sh && ./launch.sh --fastq-dir ~/your_data --auto
 ```
 
----
+### 💬 qiime2-assistant — 対話式 AI アシスタント
 
-### [qiime2-assistant](https://github.com/qiime-lab/qiime2-assistant) — 対話式 AI アシスタント
-
-[![release](https://img.shields.io/github/v/release/qiime-lab/qiime2-assistant?style=flat-square)](https://github.com/qiime-lab/qiime2-assistant/releases)
-[![license](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](https://github.com/qiime-lab/qiime2-assistant/blob/main/LICENSE)
-
-qiime2-manual の全 22 章をナレッジベースとして、QIIME 2 に関する質問にチャット形式で回答する AI アシスタントです。
-
-**主な機能：**
-- **RAG (検索拡張生成)** — マニュアルの記述に基づいた正確な回答、コマンドをそのまま引用
-- **Streamlit Web UI** — ストリーミング応答、ワンクリック質問例、サイドバーでモデル選択
-- **完全ローカル** — Ollama でローカル LLM を実行、API キー不要、オフライン対応
-- **日本語対応** — UI・回答ともに日本語 (推奨モデル: `qwen2.5:7b`)
-- **幅広いトピック** — インストールから DADA2、多様性解析、分類器作成、IS 除去、PERMANOVA、R/phyloseq 連携、トラブルシューティングまで
+- qiime2-manual 全 25 章をナレッジベースとした **RAG** ベースの回答
+- Streamlit Web UI — ストリーミング応答、ワンクリック質問例
+- 推奨モデル: `qwen2.5:7b`（日本語性能が高い）
 
 ```bash
 git clone https://github.com/qiime-lab/qiime2-assistant.git && cd qiime2-assistant
 pip install -r requirements.txt && streamlit run app.py
 ```
 
----
+### 📖 qiime2-manual — 日本語学習マニュアル
 
-### [qiime2-manual](https://github.com/qiime-lab/qiime2-manual) — 日本語マニュアル
-
-[![release](https://img.shields.io/github/v/release/qiime-lab/qiime2-manual?style=flat-square)](https://github.com/qiime-lab/qiime2-manual/releases)
-[![license](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey?style=flat-square)](https://github.com/qiime-lab/qiime2-manual/blob/main/LICENSE)
-
-QIIME 2 による 16S rRNA 遺伝子解析を **コピー＆ペーストで実行可能** にすることを目指した、実験室発の包括的日本語マニュアルです。
-
-**主な特徴：**
-- **QIIME 2 2026.1 / SILVA 138.2 対応** — 最新の amplicon distribution に準拠
-- **22 章 + 付録** — データインポートからトラブルシューティングまで全工程をカバー
-- **内部標準 (IS) 絶対定量** — 検量線・LINEST 関数を用いた絶対定量ワークフローを完全収録
-- **クロスプラットフォーム** — macOS (Intel / Apple Silicon)・Linux・Windows (WSL2)・Docker
-- **旧マニュアルからの大幅更新** — QIIME 2 2019.7 → 2026.1、SILVA 132 → 138.2、VirtualBox → WSL2、RESCRIPt・R/phyloseq 連携・Provenance tracking 等を新規追加
-- **実用的な付属ファイル** — `rename.R`（ファイル名一括変更）、`setup_dirs.sh`（ディレクトリ作成）、メタデータテンプレート
+- 各解析が **何をしているのか**・**なぜ必要か**・**メリット・デメリット** を解説
+- QIIME 2 2026.5 / SILVA 138.2 対応、ANCOM-BC2・q2-boots 等の最新手法を収録
+- 内部標準（IS）絶対定量、ネガコン除去、マルチラン統合まで実験室の実務をカバー
 
 ---
 
-## How They Work Together
+## つながり
 
 ```
-┌─────────────────────────────────────────────────────┐
-│                    qiime2-manual                    │
-│          22章の包括的日本語ドキュメント           　        │
-│      (QIIME 2 2026.1 / SILVA 138.2 対応)              │
-└──────────┬──────────────────────┬────────────────────┘
-           │ ナレッジベース         │ 解析プロトコル準拠
-           ▼                      ▼
-┌─────────────────────┐ ┌─────────────────────────────┐
-│  qiime2-assistant   │ │         seq2pipe            │
-│                     │ │                             │
-│  わからないことを       │ │  FASTQ を渡すだけで            │
-│  チャットで質問         │ │  全自動で解析・作図             │
-│                     │ │  レポート生成                  │
-│  Ollama + Streamlit │ │  Ollama + QIIME 2           │
-└─────────────────────┘ └─────────────────────────────┘
+         📖 qiime2-manual
+        ╱                ╲
+  ナレッジベース       解析プロトコル
+      ╱                    ╲
+💬 assistant    ⚡ seq2pipe --auto
+  質問して学ぶ        結果をすぐ得る
 ```
-
-- **学びながら使う** → `qiime2-manual` を読み、わからないことは `qiime2-assistant` に質問
-- **すぐに結果が欲しい** → `seq2pipe --auto` で全自動解析
-- **両方** → `seq2pipe` で自動解析した後、結果の解釈を `qiime2-assistant` に質問
 
 ---
 
 ## Tech Stack
 
-`QIIME 2` · `DADA2` · `SILVA 138.2` · `Ollama` · `Streamlit` · `Python` · `pandas` · `scipy` · `scikit-learn` · `matplotlib` · `seaborn` · `NetworkX`
+<p align="center">
+  <img src="https://img.shields.io/badge/QIIME_2-2026.5-44aa99?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHRleHQgeD0iNCIgeT0iMTgiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IndoaXRlIj5RMjwvdGV4dD48L3N2Zz4=&logoColor=white" alt="QIIME 2">
+  <img src="https://img.shields.io/badge/Python-3.10-3776ab?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Ollama-LLM-000000?style=for-the-badge&logo=ollama&logoColor=white" alt="Ollama">
+  <img src="https://img.shields.io/badge/Streamlit-UI-ff4b4b?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit">
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/DADA2-denoising-88aa55?style=flat-square" alt="DADA2">
+  <img src="https://img.shields.io/badge/SILVA_138.2-reference-55aa88?style=flat-square" alt="SILVA">
+  <img src="https://img.shields.io/badge/pandas-data-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas">
+  <img src="https://img.shields.io/badge/scikit--learn-ML-f7931e?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn">
+  <img src="https://img.shields.io/badge/scipy-stats-8caae6?style=flat-square&logo=scipy&logoColor=white" alt="scipy">
+  <img src="https://img.shields.io/badge/matplotlib-viz-11557c?style=flat-square" alt="matplotlib">
+  <img src="https://img.shields.io/badge/seaborn-viz-4c72b0?style=flat-square" alt="seaborn">
+  <img src="https://img.shields.io/badge/NetworkX-graph-aab71b?style=flat-square" alt="NetworkX">
+</p>
+
+---
 
 ## License
 
-| Repository | License |
+| | License |
 |:--|:--|
-| seq2pipe | [MIT License](https://github.com/qiime-lab/seq2pipe/blob/master/LICENSE) |
-| qiime2-assistant | [MIT License](https://github.com/qiime-lab/qiime2-assistant/blob/main/LICENSE) |
-| qiime2-manual | [CC BY-NC-SA 4.0](https://github.com/qiime-lab/qiime2-manual/blob/main/LICENSE) |
+| seq2pipe / qiime2-assistant | MIT |
+| qiime2-manual | CC BY-NC-SA 4.0 |
