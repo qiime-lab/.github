@@ -25,7 +25,7 @@
 [![release](https://img.shields.io/github/v/release/qiime-lab/qiime2-manual?style=flat-square)](https://github.com/qiime-lab/qiime2-manual/releases)
 [![license](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey?style=flat-square)](https://github.com/qiime-lab/qiime2-manual/blob/main/LICENSE)
 
-QIIME 2 による 16S rRNA 解析の全体像を 25 章で体系的に解説した日本語マニュアル。各ステップが何をしているのか、なぜ必要なのか、どんな選択肢があるのかをメリット・デメリットとともに学べる。DADA2 からANCOM-BC2、q2-boots まで、QIIME 2 2026.5 の最新手法を網羅。内部標準による絶対定量やネガコン除去など実験室の実務もカバー。
+QIIME 2 による 16S rRNA 解析の全体像を 25 章で体系的に解説した日本語マニュアル。各ステップが何をしているのか、なぜ必要なのか、どんな選択肢があるのかをメリット・デメリットとともに学べる。DADA2 からANCOM-BC2、q2-boots まで、QIIME 2 2026.1 の最新手法を網羅。内部標準による絶対定量やネガコン除去など実験室の実務もカバー。
 
 ---
 
@@ -62,7 +62,7 @@ git clone https://github.com/qiime-lab/seq2pipe.git && cd seq2pipe
 ## Tech Stack
 
 <p align="center">
-  <a href="https://qiime2.org"><img src="https://img.shields.io/badge/QIIME_2-2026.5-44aa99?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iNyIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIzIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjE1IiB5MT0iMTUiIHgyPSIyMiIgeTI9IjIyIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjMiLz48L3N2Zz4K&logoColor=white" alt="QIIME 2"></a>
+  <a href="https://qiime2.org"><img src="https://img.shields.io/badge/QIIME_2-2026.1-44aa99?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iNyIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIzIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjE1IiB5MT0iMTUiIHgyPSIyMiIgeTI9IjIyIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjMiLz48L3N2Zz4K&logoColor=white" alt="QIIME 2"></a>
   <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.10-3776ab?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
   <a href="https://ollama.com"><img src="https://img.shields.io/badge/Ollama-LLM-000000?style=for-the-badge&logo=ollama&logoColor=white" alt="Ollama"></a>
   <a href="https://streamlit.io"><img src="https://img.shields.io/badge/Streamlit-UI-ff4b4b?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit"></a>
