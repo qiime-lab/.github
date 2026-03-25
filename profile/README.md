@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://github.com/qiime-lab/seq2pipe"><img src="https://img.shields.io/badge/seq2pipe-v1.0.0-blue?style=flat-square" alt="seq2pipe"></a>
   <a href="https://github.com/qiime-lab/qiime2-assistant"><img src="https://img.shields.io/badge/qiime2--assistant-v1.0.0-green?style=flat-square" alt="qiime2-assistant"></a>
-  <a href="https://github.com/qiime-lab/qiime2-manual"><img src="https://img.shields.io/badge/qiime2--manual-v2.0.0-orange?style=flat-square" alt="qiime2-manual"></a>
+  <a href="https://github.com/qiime-lab/qiime2-manual"><img src="https://img.shields.io/badge/qiime2--manual-v2.1.0-orange?style=flat-square" alt="qiime2-manual"></a>
 </p>
 
 ---
