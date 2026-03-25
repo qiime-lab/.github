@@ -60,20 +60,20 @@ git clone https://github.com/qiime-lab/seq2pipe.git && cd seq2pipe
 ## Tech Stack
 
 <p align="center">
-  <a href="https://qiime2.org"><img src="https://img.shields.io/badge/QIIME_2-2026.5-44aa99?style=for-the-badge" alt="QIIME 2"></a>
-  <a href="https://python.org"><img src="https://img.shields.io/badge/-Python-3776ab?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
-  <a href="https://ollama.com"><img src="https://img.shields.io/badge/-Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white" alt="Ollama"></a>
-  <a href="https://streamlit.io"><img src="https://img.shields.io/badge/-Streamlit-ff4b4b?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit"></a>
+  <a href="https://qiime2.org"><img src="https://img.shields.io/badge/QIIME_2-2026.5-44aa99?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHRleHQgeD0iMiIgeT0iMTgiIGZvbnQtZmFtaWx5PSJBcmlhbCxzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiPlEyPC90ZXh0Pjwvc3ZnPgo=&logoColor=white" alt="QIIME 2"></a>
+  <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.10-3776ab?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
+  <a href="https://ollama.com"><img src="https://img.shields.io/badge/Ollama-LLM-000000?style=for-the-badge&logo=ollama&logoColor=white" alt="Ollama"></a>
+  <a href="https://streamlit.io"><img src="https://img.shields.io/badge/Streamlit-UI-ff4b4b?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit"></a>
 </p>
 <p align="center">
-  <a href="https://benjjneb.github.io/dada2/"><img src="https://img.shields.io/badge/-DADA2-88aa55?style=flat-square" alt="DADA2"></a>
-  <a href="https://www.arb-silva.de/"><img src="https://img.shields.io/badge/-SILVA_138.2-55aa88?style=flat-square" alt="SILVA"></a>
-  <a href="https://pandas.pydata.org"><img src="https://img.shields.io/badge/-pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas"></a>
-  <a href="https://scikit-learn.org"><img src="https://img.shields.io/badge/-scikit--learn-f7931e?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn"></a>
-  <a href="https://scipy.org"><img src="https://img.shields.io/badge/-SciPy-8caae6?style=flat-square&logo=scipy&logoColor=white" alt="SciPy"></a>
-  <a href="https://matplotlib.org"><img src="https://img.shields.io/badge/-matplotlib-11557c?style=flat-square" alt="matplotlib"></a>
-  <a href="https://seaborn.pydata.org"><img src="https://img.shields.io/badge/-seaborn-4c72b0?style=flat-square" alt="seaborn"></a>
-  <a href="https://networkx.org"><img src="https://img.shields.io/badge/-NetworkX-aab71b?style=flat-square" alt="NetworkX"></a>
+  <a href="https://benjjneb.github.io/dada2/"><img src="https://img.shields.io/badge/DADA2-denoising-88aa55?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTQgMmMwIDYgMTYgNiAxNiAxMnMtMTYgNi0xNiAxMiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyLjUiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMjAgMmMwIDYtMTYgNi0xNiAxMnMxNiA2IDE2IDEyIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgb3BhY2l0eT0iMC41Ii8+PC9zdmc+Cg==&logoColor=white" alt="DADA2"></a>
+  <a href="https://www.arb-silva.de/"><img src="https://img.shields.io/badge/SILVA_138.2-reference-55aa88?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGVsbGlwc2UgY3g9IjEyIiBjeT0iNiIgcng9IjkiIHJ5PSI0IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMyA2djZjMCAyLjIgNCA0IDkgNHM5LTEuOCA5LTRWNiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTMgMTJ2NmMwIDIuMiA0IDQgOSA0czktMS44IDktNHYtNiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PC9zdmc+Cg==&logoColor=white" alt="SILVA"></a>
+  <a href="https://pandas.pydata.org"><img src="https://img.shields.io/badge/pandas-data-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas"></a>
+  <a href="https://scikit-learn.org"><img src="https://img.shields.io/badge/scikit--learn-ML-f7931e?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn"></a>
+  <a href="https://scipy.org"><img src="https://img.shields.io/badge/SciPy-stats-8caae6?style=flat-square&logo=scipy&logoColor=white" alt="SciPy"></a>
+  <a href="https://matplotlib.org"><img src="https://img.shields.io/badge/matplotlib-viz-11557c?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHJlY3QgeD0iMyIgeT0iMTQiIHdpZHRoPSI0IiBoZWlnaHQ9IjgiIHJ4PSIxIiBmaWxsPSJ3aGl0ZSIvPjxyZWN0IHg9IjEwIiB5PSI4IiB3aWR0aD0iNCIgaGVpZ2h0PSIxNCIgcng9IjEiIGZpbGw9IndoaXRlIi8+PHJlY3QgeD0iMTciIHk9IjMiIHdpZHRoPSI0IiBoZWlnaHQ9IjE5IiByeD0iMSIgZmlsbD0id2hpdGUiLz48L3N2Zz4K&logoColor=white" alt="matplotlib"></a>
+  <a href="https://seaborn.pydata.org"><img src="https://img.shields.io/badge/seaborn-viz-4c72b0?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTIgMTZjMy04IDYgNCAxMC00czUgMiAxMC00IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTIgMjBjMy04IDYgNCAxMC00czUgMiAxMC00IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjQiLz48L3N2Zz4K&logoColor=white" alt="seaborn"></a>
+  <a href="https://networkx.org"><img src="https://img.shields.io/badge/NetworkX-graph-aab71b?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjMiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iMTgiIGN5PSI2IiByPSIzIiBmaWxsPSJ3aGl0ZSIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTgiIHI9IjMiIGZpbGw9IndoaXRlIi8+PGxpbmUgeDE9IjYiIHkxPSI2IiB4Mj0iMTgiIHkyPSI2IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNSIvPjxsaW5lIHgxPSI2IiB5MT0iNiIgeDI9IjEyIiB5Mj0iMTgiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41Ii8+PGxpbmUgeDE9IjE4IiB5MT0iNiIgeDI9IjEyIiB5Mj0iMTgiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41Ii8+PC9zdmc+Cg==&logoColor=white" alt="NetworkX"></a>
 </p>
 
 ---
