@@ -43,6 +43,8 @@ pip install -r requirements.txt && streamlit run app.py
 
 ---
 
+<img src="https://raw.githubusercontent.com/qiime-lab/seq2pipe/master/seq2pipe.png" width="80" align="right">
+
 ### [seq2pipe](https://github.com/qiime-lab/seq2pipe) — 全部自動でやる
 
 [![release](https://img.shields.io/github/v/release/qiime-lab/seq2pipe?style=flat-square)](https://github.com/qiime-lab/seq2pipe/releases)
