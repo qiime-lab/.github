@@ -3,6 +3,7 @@
   <a href="https://github.com/qiime-lab/.github/blob/main/qiimelab.png">
     <img src="main/qiimelab.png" width="215" alt="qiime-lab logo" />
   </a>
+</div>
 <h4 align="center">QIIME 2 マイクロバイオーム解析を学ぶためのオープンソースプラットフォーム</h4>
 
 <p align="center">
