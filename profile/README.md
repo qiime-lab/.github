@@ -1,5 +1,8 @@
 <h1 align="center">qiime-lab</h1>
-
+<div align="center">
+  <a href="https://github.com/SakanaAI/AI-Scientist_v2/blob/main/docs/logo_v1.jpg">
+    <img src="docs/logo_v1.png" width="215" alt="qiime-lab logo" />
+  </a>
 <h4 align="center">QIIME 2 マイクロバイオーム解析を学ぶためのオープンソースプラットフォーム</h4>
 
 <p align="center">
