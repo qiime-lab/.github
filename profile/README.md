@@ -1,7 +1,7 @@
 <h1 align="center">qiime-lab</h1>
 <div align="center">
   <a href=https://raw.githubusercontent.com/qiime-lab/.github/main/qiimelab.png">
-    <img src="https://raw.githubusercontent.com/qiime-lab/.github/main/qiimelab.png" width="215" alt="qiime-lab logo" />
+    <img src="main/qiimelab.png" width="215" alt="qiime-lab logo" />
   </a>
 </div>
 <h4 align="center">QIIME 2 マイクロバイオーム解析を学ぶためのオープンソースプラットフォーム</h4>
